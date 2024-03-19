@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông Tin Tuyển Sinh</title>
+    <link rel="icon" href="./Image/Logo.png" type="image/png">
+    <link rel="stylesheet" href="Giới Thiệu.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("copyPhoneNumber").addEventListener("click", function() {
+                var phoneNumber = "02435577799"; // Thay đổi số điện thoại theo số thực tế
+                var tempInput = document.createElement("input");
+                tempInput.value = phoneNumber;
+                document.body.appendChild(tempInput);
+                tempInput.select();
+                document.execCommand("copy");
+                document.body.removeChild(tempInput);
+                alert("Số điện thoại đã được sao chép: " + phoneNumber);
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="index.html">Trang Chủ</a>
+            <div class="dropdown">
+                <button class="dropbtn">Giới Thiệu</button>
+                <div class="dropdown-content">
+                    <a href="Lịch Sử Phát Triển.html">Lịch Sử Phát Triển</a>
+                    <a href="Cơ Sở Vật Chất.html">Cơ Sở Vật Chất</a>
+                    <a href="Đội Ngũ Giảng Viên.html">Đội Ngũ Giảng Viên</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Tuyển Sinh Đại Học</button>
+                <div class="dropdown-content">
+                    <a href="Thông Tin Tuyển Sinh.html">Thông Tin Tuyển Sinh 2024</a>
+                    <a href="Đăng ký Tuyển Sinh.html">Đăng Ký Tuyển Sinh</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Tài Khoản</button>
+                <div class="dropdown-content">
+                    <a href="./Đăng Nhập.html">Đăng Nhập</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Liên Hệ</button>
+                <div class="dropdown-content">
+                    <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=&su=&body=">Email</a>
+                    <a href="#" id="copyPhoneNumber">Số Điện Thoại</a>
+                </div>
+            </div>
+            <div class="search-container">
+                <input type="text" placeholder="Tìm kiếm...">
+                <button type="submit">Tìm kiếm</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="article">
+                <h2 style="font-size: 40px;">Thông Tin Tuyển Sinh</h2>
+                <h2>Tại sao nên chọn Đại học Đại Nam?</h2>
+                <p>- Cơ sở vật chất hiện đại đáp ứng nhu cầu học tập và phát triển toàn diện của sinh viên</p>
+                <p>- Đội ngũ giảng viên giỏi, là những thầy cô tâm huyết, yêu nghề, luôn quan tâm và giúp đỡ sinh viên</p>
+                <p>- 100% sinh viên được thực hành, thực tập tại các tập đoàn, doanh nghiệp uy tín</p>
+                <p>- Sinh viên được ra trường sớm từ 0,5 - 1 năm, tiết kiệm thời gian và chi phí</p>
+                <p>- Hoạt động phong trào sinh viên phong phú, đa dạng nhất miền Bắc</p>
+                <p>- Gần 30 câu lạc bộ sinh viên hoạt động sôi nổi, đa dạng về hình thức và nội dung</p>
+                <p>- Chính sách học bổng đa dạng, hấp dẫn dành cho nhiều đối tượng khác nhau</p>
+                <p>- Môi trường học tập năng động, hiện đại, giúp sinh viên hoàn thiện và phát triển bản thân</p>
+                <p>- Chương trình đào tạo cập nhật, gắn đào tạo với nhu cầu thực tế của doanh nghiệp</p>
+                <h2>Các Ngành Đào Tạo</h2> 
+                <img src="./Image/nganhxettuyen.jpg">
+                <h2>Điểm Chuẩn 2023</h2>
+                <img src="./Image/bangdiem.jpg">
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="column">
+          <h3 style="font-size: 25px; text-align: left;">TRƯỜNG ĐẠI HỌC ĐẠI NAM</h3>
+          <p style="font-size: 16px; text-align: left;">Địa chỉ: Số 1 Phố Xốm - Phú Lãm - Hà Đông - Hà Nội<br>Email: dnu@dainam.edu.vn<br>Điện thoại: (024) 35577799</p>
+        </div>
+        <div class="column">
+          <p><img src="./Image/Logo3.png" alt="Logo Footer"></p>
+        </div>
+        <div class="column">
+          <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3726.1206073986514!2d105.75520821001443!3d20.947671180600853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313452eaa9c461c3%3A0x2a3e1c421f299adc!2zVHLGsOG7nW5nIMSQ4bqhaSBI4buNYyDEkOG6oWkgTmFt!5e0!3m2!1svi!2s!4v1709141872942!5m2!1svi!2s" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+        </div>
+      </footer>
+</body>
+</html>

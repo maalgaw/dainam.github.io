@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký Tuyển Sinh</title>
+    <link rel="icon" href="./Image/Logo.png" type="image/png">
+    <link rel="stylesheet" href="Đăng Ký Tuyển Sinh.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById('registerButton').addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent form submission
+            var fullname = document.getElementById('fullname').value;
+            var dob = document.getElementById('dob').value;
+            var phone = document.getElementById('phone').value;
+            var email = document.getElementById('email').value;
+            var address = document.getElementById('address').value;
+            var major1 = document.getElementById('major1').value;
+            var major2 = document.getElementById('major2').value;
+
+            if (fullname === '' || dob === '' || phone === '' || email === '' || address === '' || major1 === '' || major2 === '') {
+                alert('Hãy điền đầy đủ thông tin');
+            } 
+            else {
+                alert('Đăng ký tuyển sinh thành công!');
+                // Thêm các xử lý khác ở đây nếu cần
+            }
+            });
+            document.getElementById("copyPhoneNumber").addEventListener("click", function() {
+                var phoneNumber = "02435577799"; // Thay đổi số điện thoại theo số thực tế
+                var tempInput = document.createElement("input");
+                tempInput.value = phoneNumber;
+                document.body.appendChild(tempInput);
+                tempInput.select();
+                document.execCommand("copy");
+                document.body.removeChild(tempInput);
+                alert("Số điện thoại đã được sao chép: " + phoneNumber);
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="index.html">Trang Chủ</a>
+            <div class="dropdown">
+                <button class="dropbtn">Giới Thiệu</button>
+                <div class="dropdown-content">
+                    <a href="Lịch Sử Phát Triển.html">Lịch Sử Phát Triển</a>
+                    <a href="Cơ Sở Vật Chất.html">Cơ Sở Vật Chất</a>
+                    <a href="Đội Ngũ Giảng Viên.html">Đội Ngũ Giảng Viên</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Tuyển Sinh Đại Học</button>
+                <div class="dropdown-content">
+                    <a href="Thông Tin Tuyển Sinh.html">Thông Tin Tuyển Sinh 2024</a>
+                    <a href="">Đăng Ký Tuyển Sinh</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Tài Khoản</button>
+                <div class="dropdown-content">
+                    <a href="./Đăng Nhập.html">Đăng Nhập</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Liên Hệ</button>
+                <div class="dropdown-content">
+                    <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=&su=&body=">Email</a>
+                    <a href="#" id="copyPhoneNumber">Số Điện Thoại</a>
+                </div>
+            </div>
+            <div class="search-container">
+                <input type="text" placeholder="Tìm kiếm...">
+                <button type="submit">Tìm kiếm</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="login">
+            <form class="login-form">
+                <h1>Đăng Ký</h1>
+                <label for="fullname">Họ & Tên</label>
+                <input type="text" id="fullname" class="input-account">
+                <label for="dob">Ngày Sinh</label>
+                <input type="date" id="dob" class="input-account">
+                <label for="phone">Số Điện Thoại</label>
+                <input type="tel" id="phone" class="input-account">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="input-account">
+                <label for="address">Địa Chỉ</label>
+                <input type="text" id="address" class="input-account">
+                <label for="major1">Ngành Nguyện Vọng 1</label>
+                <select id="major1" class="input-account">
+                    <option value="" disabled selected>Chọn Ngành</option>
+                    <option value="nganh1">Y Khoa</option>
+                    <option value="nganh2">Điều Dưỡng</option>
+                    <option value="nganh3">Khoa Học Máy Tính</option>
+                    <option value="nganh4">Logistic và quản lý chuỗi cung ứng</option>
+                    <option value="nganh5">Kiến trúc</option>
+                    <option value="nganh6">Quản trị kinh doanh</option>
+                    <option value="nganh7">Công nghệ thông tin</option>
+                    <optione></optione>
+                </select>
+                <label for="major2">Ngành Nguyện Vọng 2</label>
+                <select id="major2" class="input-account">
+                    <option value="" disabled selected>Chọn Ngành</option>
+                    <option value="nganh1">Y Khoa</option>
+                    <option value="nganh2">Điều Dưỡng</option>
+                    <option value="nganh3">Khoa Học Máy Tính</option>
+                    <option value="nganh4">Logistic và quản lý chuỗi cung ứng</option>
+                    <option value="nganh5">Kiến trúc</option>
+                    <option value="nganh6">Quản trị kinh doanh</option>
+                    <option value="nganh7">Công nghệ thông tin</option>  
+                </select>
+                <button type="submit" id="registerButton" class="button-login">Đăng Ký</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="column">
+          <h3 style="font-size: 25px; text-align: left;">TRƯỜNG ĐẠI HỌC ĐẠI NAM</h3>
+          <p style="font-size: 16px; text-align: left;">Địa chỉ: Số 1 Phố Xốm - Phú Lãm - Hà Đông - Hà Nội<br>Email: dnu@dainam.edu.vn<br>Điện thoại: (024) 35577799</p>
+        </div>
+        <div class="column">
+          <p><img src="./Image/Logo3.png" alt="Logo Footer"></p>
+        </div>
+        <div class="column">
+          <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3726.1206073986514!2d105.75520821001443!3d20.947671180600853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313452eaa9c461c3%3A0x2a3e1c421f299adc!2zVHLGsOG7nW5nIMSQ4bqhaSBI4buNYyDEkOG6oWkgTmFt!5e0!3m2!1svi!2s!4v1709141872942!5m2!1svi!2s" width="300" height="120" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+        </div>
+      </footer>
+</body>
+</html>

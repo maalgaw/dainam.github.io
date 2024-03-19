@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cơ Sở Vật Chất</title>
+    <link rel="icon" href="./Image/Logo.png" type="image/png">
+    <link rel="stylesheet" href="Giới Thiệu.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("copyPhoneNumber").addEventListener("click", function() {
+                var phoneNumber = "02435577799"; // Thay đổi số điện thoại theo số thực tế
+                var tempInput = document.createElement("input");
+                tempInput.value = phoneNumber;
+                document.body.appendChild(tempInput);
+                tempInput.select();
+                document.execCommand("copy");
+                document.body.removeChild(tempInput);
+                alert("Số điện thoại đã được sao chép: " + phoneNumber);
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="index.html">Trang Chủ</a>
+            <div class="dropdown">
+                <button class="dropbtn">Giới Thiệu</button>
+                <div class="dropdown-content">
+                    <a href="Lịch Sử Phát Triển.html">Lịch Sử Phát Triển</a>
+                    <a href="Cơ Sở Vật Chất.html">Cơ Sở Vật Chất</a>
+                    <a href="Đội Ngũ Giảng Viên.html">Đội Ngũ Giảng Viên</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Tuyển Sinh Đại Học</button>
+                <div class="dropdown-content">
+                    <a href="Thông Tin Tuyển Sinh.html">Thông Tin Tuyển Sinh 2024</a>
+                    <a href="Đăng ký Tuyển Sinh.html">Đăng Ký Tuyển Sinh</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Tài Khoản</button>
+                <div class="dropdown-content">
+                    <a href="./Đăng Nhập.html">Đăng Nhập</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Liên Hệ</button>
+                <div class="dropdown-content">
+                    <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=&su=&body=">Email</a>
+                    <a href="#" id="copyPhoneNumber">Số Điện Thoại</a>
+                </div>
+            </div>
+            <div class="search-container">
+                <input type="text" placeholder="Tìm kiếm...">
+                <button type="submit">Tìm kiếm</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="article">
+                <h2 style="text-align: center;">Cơ Sở Vật Chất</h2>
+                <p style="font-weight: bold;">Sau gần 2 thập kỷ xây dựng và phát triển,Trường Đại học Đại Nam có sự gia tăng nhanh chóng về cơ sở vật chất phục vụ công tác đào tạo, phát triển con người toàn diện.</p>
+                <img src="./Image/p6.jpg">
+                <p style="text-align: center; font-style: italic;">Toàn cảnh Trường Đại học Đại Nam tại cơ sở chính số 1 phố Xốm -Phú Lãm - Hà Đông - Hà Nội.</p>
+                <img src="./Image/p9.jpg">
+                <p style="text-align: center;">Cổng trường đại học lớn nhất miền Bắc.</p>
+                <img src="./Image/p7.jpg">
+                <p>Tổng diện tích đất của nhà trường gần 10 ha, toạ lạc ngay trung tâm quận Hà Đông - TP. Hà Nội.</p>
+                <p>Các công trình đã xây dựng phục vụ công tác đào tạo, nghiên cứu khoa học, gồm: 2 toà nhà giảng đường (9 tầng), toà nhà Central building (8 tầng), toà nhà Trung tâm khởi nghiệp (8 tầng), Khách sạn sinh viên (15 tầng), Hội trường lớn, thư viện, trung tâm học liệu, hệ thống phòng thực hành - thí nghiệm, Trung tâm thực hành ngành Dược, nhà thể chất đa năng, 05 sân bóng đá, bóng rổ, thao trường quốc phòng an ninh... </p>
+                <img src="./Image/p10.jpg">
+                <p style="text-align: center;">Tòa nhà Trung tâm.</p>
+                <img src="./Image/p11.jpg">
+                <p style="text-align: center;">Toàn cảnh hai tòa giảng đường GD1 và GD2.</p>
+                <p>Hiện trường Đại học Đại Nam đang tiếp tục triển khai xây dựng Dự án xây dựng quần thể trường giai đoạn 2 với tổng vốn đầu tư lên đến 1.800 tỷ đồng gồm các hạng mục công trình: Hệ thống nhà xưởng thực hành - thí nghiệm diện tích 3.517 m2, tổng diện tích sàn 24.619 m2, số tầng 7; Căng - tin diện tích 1.707 m2, tổng diện tích sàn 15.363 m2, số tầng 9; Thư viện diện tích 1.533 m2, tổng diện tích sàn 1.0731 m2, số tầng 7; Nhà thể thao đa năng diện tích 1.437 m2, tổng diện tích sàn 10.059 m2, số tầng 7;  Ngoài ra, nhà trường còn đầu tư xây dựng đồng bộ hạ tầng giao thông, thông tin liên lạc, cấp điện, cấp thoát nước, bãi đỗ xe, cảnh quan cây xanh...</p>
+                <p>Với dự án đã được TP Hà Nội phê duyệt, Trường ĐH Đại Nam sẽ tập trung xây dựng thêm các hạng mục, gồm: Hệ thống giảng đường (GR -1 diện tích 1350 m2, tổng diện tích sàn 12.150 m2, số tầng 9; GR-2 diện tích 1350 m2, tổng diện tích sàn 12.150 m2, số tầng 9; GR-3 diện tích 2.760 m2, tổng diện tích sản 41.400 m2, số tầng 15); Nhà hiệu bộ diện tích 1.052 m2, tổng diện tích sàn 8.416 m2, số tầng 8... </p>
+                <p>Dự kiến, quần thể Đại học Đại Nam sẽ hoàn thành vào năm 2025 - 2027.</p>
+                <p>Chú trọng mục tiêu đào tạo là học lý thuyết phải gắn liền ngay và luôn với thực tế để sinh viên không chỉ nắm vững được chuyên môn mà phải thuần thục các kĩ năng thực hành. Trường Đại học Đại Nam là trường Đại học đầu tiên có mô hình khách sạn 3 sao, 4 sao và 5 sao dành cho sinh viên khoa Du lịch thực hành.Bên cạnh đó, với các khoa khác như: Y, Dược, Điều dưỡng, Kế toán, Tài chính - Ngân hàng, Công nghệ thông tin, Đông phương học - chuyên ngành Nhật Bản, Ngôn ngữ và văn hóa Trung Quốc, Ngôn ngữ và văn hóa Hàn Quốc đều có những khu thực hành, phòng thí nghiệm, trung tâm thực hành, phòng lab công nghệ cao, phòng học hiện đại theo chuẩn Nhật riêng biệt. Tất cả đều đảm bảo tốt nhất cho sinh viên học tập và thực nghiệm, sinh viên có thể đáp ứng được các yêu cầu làm việc của doanh nghiệp ngay khi đang học…</p>
+                
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="column">
+          <h3 style="font-size: 25px; text-align: left;">TRƯỜNG ĐẠI HỌC ĐẠI NAM</h3>
+          <p style="font-size: 16px; text-align: left;">Địa chỉ: Số 1 Phố Xốm - Phú Lãm - Hà Đông - Hà Nội<br>Email: dnu@dainam.edu.vn<br>Điện thoại: (024) 35577799</p>
+        </div>
+        <div class="column">
+          <p><img src="./Image/Logo3.png" alt="Logo Footer"></p>
+        </div>
+        <div class="column">
+          <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3726.1206073986514!2d105.75520821001443!3d20.947671180600853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313452eaa9c461c3%3A0x2a3e1c421f299adc!2zVHLGsOG7nW5nIMSQ4bqhaSBI4buNYyDEkOG6oWkgTmFt!5e0!3m2!1svi!2s!4v1709141872942!5m2!1svi!2s" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+        </div>
+      </footer>
+</body>
+</html>

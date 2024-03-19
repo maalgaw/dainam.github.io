@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đội Ngũ Giảng Viên</title>
+    <link rel="icon" href="./Image/Logo.png" type="image/png">
+    <link rel="stylesheet" href="Giới Thiệu.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("copyPhoneNumber").addEventListener("click", function() {
+                var phoneNumber = "02435577799"; // Thay đổi số điện thoại theo số thực tế
+                var tempInput = document.createElement("input");
+                tempInput.value = phoneNumber;
+                document.body.appendChild(tempInput);
+                tempInput.select();
+                document.execCommand("copy");
+                document.body.removeChild(tempInput);
+                alert("Số điện thoại đã được sao chép: " + phoneNumber);
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="index.html">Trang Chủ</a>
+            <div class="dropdown">
+                <button class="dropbtn">Giới Thiệu</button>
+                <div class="dropdown-content">
+                    <a href="Lịch Sử Phát Triển.html">Lịch Sử Phát Triển</a>
+                    <a href="Cơ Sở Vật Chất.html">Cơ Sở Vật Chất</a>
+                    <a href="Đội Ngũ Giảng Viên.html">Đội Ngũ Giảng Viên</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Tuyển Sinh Đại Học</button>
+                <div class="dropdown-content">
+                    <a href="Thông Tin Tuyển Sinh.html">Thông Tin Tuyển Sinh 2024</a>
+                    <a href="Đăng ký Tuyển Sinh.html">Đăng Ký Tuyển Sinh</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Tài Khoản</button>
+                <div class="dropdown-content">
+                    <a href="./Đăng Nhập.html">Đăng Nhập</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Liên Hệ</button>
+                <div class="dropdown-content">
+                    <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=&su=&body=">Email</a>
+                    <a href="#" id="copyPhoneNumber">Số Điện Thoại</a>
+                </div>
+            </div>
+            <div class="search-container">
+                <input type="text" placeholder="Tìm kiếm...">
+                <button type="submit">Tìm kiếm</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="article">
+                <h2 style="text-align: center; ">Đội Ngũ Giảng Viên</h2>
+                <p style="text-align: left;">Sau gần 2 thập kỷ xây dựng và phát triển, Trường Đại học Đại Nam có sự chuyển biến vô cùng lớn về LƯỢNG và CHẤT trong đội ngũ cán bộ, giảng viên cơ hữu.</p>
+                <p>- Gần 1.000 cán bộ, giảng viên, nhân viên.</p>
+                <p>- Hơn 800 giảng viên cơ hữu (03 Giáo sư, 50 Phó Giáo sư, 125 Tiến sĩ, 650 Thạc sĩ….)</p>
+                <img src="./Image/p12.png">
+                <p>100% giảng viên cơ hữu của DNU được đào tạo bài bản, chuyên nghiệp tại các cơ sở đào tạo uy tín trong nước và quốc tế. Đặc biệt, đội ngũ nhân sự của trường liên tục được học tập nâng cao trình độ chuyên môn và kỹ năng nghề nghiệp.</p>
+                <img src="./Image/p13.png">
+                <p style="text-align: center;">Đội ngũ lãnh đạo chủ chốt của trường Đại học Đại Nam.</p>
+                <img src="./Image/p14.png">
+                <p style="text-align: center;">Đội ngũ giảng viên giỏi chuyên môn, giàu kinh nghiệm, nhiệt huyết và trách nhiệm của khối Sức khỏe (Y, Dược, Điều dưỡng) trường Đại học Đại Nam.</p>
+                <img src="./Image/p15.png">
+                <img src="./Image/p16.png">
+                <p style="text-align: center;">TTND, PGS.TS Hoàng Đức Hạnh (giữa) - Trưởng khoa Y, nguyên Phó Giám đốc Sở Y tế Hà Nội và đại diện các giảng viên khoa Y.</p>
+                <img src="./Image/p17.png">
+                <img src="./Image/p18.png">
+                <p style="text-align: center;">Đội ngũ giảng viên hùng hậu của khoa Dược trường Đại học Đại Nam.</p>
+                <img src="./Image/p19.png">
+                <p style="text-align: center;">Tham gia giảng dạy tại khoa Dược trường Đại học Đại Nam là các giảng viên được đào tạo bản bản, chuyên nghiệp có kiến thức chuyên môn giỏi, giàu kinh nghiệm thực tế và sở hữu phương pháp giảng dạy hiện đại, tích cực.</p>
+                <img src="./Image/p20.png">
+                <img src="./Image/p21.png">
+                <p style="text-align: center;">Cán bộ, giảng viên khoa Điều dưỡng.</p>
+                <img src="./Image/p22.png">
+                <p style="text-align: center;">Thầy cô khoa Công nghệ thông tin trường Đại học Đại Nam.</p>
+                <img src="./Image/p23.png">
+                <p style="text-align: center;">Đội ngũ giảng viên giỏi của khoa CNTT đủ năng lực đảm bảo cho sự thành công của chương trình đào tạo. </p>
+                <img src="./Image/p24.png">
+                <img src="./Image/p25.png">
+                <p style="text-align: center;">Đội ngũ cán bộ, giảng viên hùng hậu của khoa Quản trị kinh doanh. 100% giảng viên khoa Quản trị kinh doanh, Logistics và quản lý chuỗi cung ứng có trình độ từ ThS trở lên.</p>
+                <img src="./Image/p26.png">
+                <p style="text-align: center;">Đại diện giảng viên các khoa Tài chính Ngân hàng, Kế toán, Luật kinh tế.</p>
+                <img src="./Image//p27.png">
+                <p style="text-align: center;">Đội ngũ giảng viên các ngành Ngôn ngữ Anh, ngôn ngữ Hàn Quốc, ngôn ngữ Nhật Bản, ngôn ngữ Trung Quốc.</p>
+                <img src="./Image//p28.png">
+                <p style="text-align: center;">Thầy cô khoa Ngôn ngữ Anh trường Đại học Đại Nam.</p>
+                <img src="./Image//p29.png">
+                <img src="./Image//p30.png">
+                <p style="text-align: center;">Đội ngũ giảng viên chất lượng của khoa Ngôn ngữ và văn hóa Trung Quốc.</p>
+                <img src="./Image//p31.png">
+                <p style="text-align: center;"> Đại diện thầy cô khoa Ngôn ngữ và văn hóa Nhật Bản.</p>
+                <img src="./Image//p32.png">
+                <p style="text-align: center;">Thầy trò khoa Ngôn ngữ và văn hóa Hàn Quốc.</p>
+                <img src="./Image//p33.png">
+                <p style="text-align: center;">Đội ngũ giảng viên giàu kinh nghiệm thực chiến của khoa Thương mại điện tử và kinh tế số.</p>
+                <img src="./Image//p34.png">
+                <p style="text-align: center;">Khoa Du lịch quy tụ những giảng viên giỏi chuyên môn, nhiệt huyết và vô cùng trách nhiệm.</p>
+                <img src="./Image//p35.png">
+                <p style="text-align: center;">Khoa Truyền thông sở hữu đội ngũ nhân sự là nhà báo, nhà truyền thông giỏi chuyên môn, giàu kinh nghiệm.</p>
+                <img src="./Image//p36.png">
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="column">
+          <h3 style="font-size: 25px; text-align: left;">TRƯỜNG ĐẠI HỌC ĐẠI NAM</h3>
+          <p style="font-size: 16px; text-align: left;">Địa chỉ: Số 1 Phố Xốm - Phú Lãm - Hà Đông - Hà Nội<br>Email: dnu@dainam.edu.vn<br>Điện thoại: (024) 35577799</p>
+        </div>
+        <div class="column">
+          <p><img src="./Image/Logo3.png" alt="Logo Footer"></p>
+        </div>
+        <div class="column">
+          <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3726.1206073986514!2d105.75520821001443!3d20.947671180600853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313452eaa9c461c3%3A0x2a3e1c421f299adc!2zVHLGsOG7nW5nIMSQ4bqhaSBI4buNYyDEkOG6oWkgTmFt!5e0!3m2!1svi!2s!4v1709141872942!5m2!1svi!2s" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+        </div>
+      </footer>
+</body>
+</html>
